@@ -1,14 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Oswald, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
+  weights: ["400", "700"], 
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
   subsets: ["latin"],
+  weights: ["300", "600"],
 });
 
 export const metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${oswald.variable} ${josefinSans.variable} antialiased`}
       >
         {children}
       </body>
