@@ -1,24 +1,16 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Welcome from "@/components/Welcome"
+
+// bg-dark-green min-h-screen text-white-purple font-oswald 
 
 export default function Home() {
   return (
-    <div className="bg-white-green min-h-screen text-dark-purple font-sans">
-      {/* Section principale */}
-      <header className="relative p-8 flex flex-col items-center text-center">
-        {/* Illustration */}
-        <div className="w-48 h-48 bg-contain bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/illustration.png')" }}
-        ></div>
+    <div className=" w-full max-w-[1400px] bg-white-purple">       {/* container principal y compris footer et navbar */}
+      <Navbar/>
+      <Welcome/>
 
-        {/* Titre et sous-titre */}
-        <h1 className="text-4xl font-bold mt-6 leading-snug">
-          ORIANE <br /> ROYON <br /> DA SILVA
-        </h1>
-        <p className="mt-2 text-intense-purple text-lg font-medium">
-          CRÉATIVE ET DÉTERMINÉE : <br />
-          DÉVELOPPEUSE FRONT-END EN DEVENIR
-        </p>
-
+      <section>
         {/* Boutons */}
         <div className="flex gap-8 mt-10">
           <button className="bg-dark-purple text-white py-4 px-8 rounded-lg shadow-lg hover:bg-intense-purple">
@@ -28,7 +20,8 @@ export default function Home() {
             MES PROJETS DE CODE
           </button>
         </div>
-      </header>
+        </section>
+
 
       {/* Formulaire de contact */}
       <section className="mt-12 bg-dark-purple text-white p-6">
@@ -98,7 +91,6 @@ export default function Home() {
           </ul>
         </div>
       </footer>
-    </div>
-    
+      </div>
   )
 }

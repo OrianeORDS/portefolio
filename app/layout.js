@@ -21,8 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${oswald.variable} ${josefinSans.variable} antialiased`}
+      <body 
+        className= {`${oswald.variable} ${josefinSans.variable} antialiased flex justify-center items-center min-h-screen bg-dark-green px-3 sm:px-4 `}
       >
         {children}
       </body>

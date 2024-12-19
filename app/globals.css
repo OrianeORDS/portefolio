@@ -3,8 +3,19 @@
 @tailwind utilities;
 
 
+:root {
+  --color-dark-green: hsla(186, 38%, 20%, 1);
+}
 
-/* theme dark/light => to do later 
+body {
+  background-color: var(--color-dark-green);
+}
+
+h1 {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-dark-purple font-oswald;
+}
+
+/* exemple de theme dark/light => to do later 
 
 :root {
   --background: #ffffff;
