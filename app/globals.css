@@ -15,6 +15,10 @@ h1 {
   @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-dark-purple font-oswald;
 }
 
+.text-outline {
+  text-shadow: 0px 0px 10px white;
+}
+
 /* exemple de theme dark/light => to do later 
 
 :root {

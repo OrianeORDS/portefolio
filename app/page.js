@@ -6,7 +6,7 @@ import Welcome from "@/components/Welcome"
 
 export default function Home() {
   return (
-    <div className=" w-full max-w-[1400px] bg-white-purple">       {/* container principal y compris footer et navbar */}
+    <div className=" w-full max-w-[1400px] bg-white-green">       {/* container principal y compris footer et navbar */}
       <Navbar/>
       <Welcome/>
 
