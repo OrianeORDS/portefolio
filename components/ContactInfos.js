@@ -1,7 +1,9 @@
+import TitleH2 from "./TitleH2";
+
 export default function ContactInfos () {
 return (
     <div className="max-w-lg mx-auto">
-        <h3 className="mb-2">Coordonnées</h3>
+        <TitleH2 title="Coordonnées"/>
         <ul>
             <li>orianeroyon.arobas@gmail.com</li>
             <li>06 44 53 87 21</li>

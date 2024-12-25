@@ -19,6 +19,15 @@ h1 {
   text-shadow: 0px 0px 10px white;
 }
 
+
+@layer base {
+  form, form input,  form textarea,   form select,   form label,   form button {
+    @apply font-source;
+  }
+}
+
+
+
 /* exemple de theme dark/light => to do later 
 
 :root {
