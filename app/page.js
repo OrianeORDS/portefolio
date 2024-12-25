@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar/>
       <Welcome/>
       <Section/>
-      <section className="mt-12 bg-dark-purple text-white p-6">
+      <section className="py-12 bg-dark-purple text-white p-6">
         <ContactForm/>
         <ContactInfos/>
       </section> 

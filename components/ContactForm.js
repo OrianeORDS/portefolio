@@ -6,8 +6,9 @@ export default function ContactForm() {
 return (
 
   <div className="max-w-lg mx-auto">
-    <TitleH2 title="Formulaire de contact"/> 
-    <form className="flex flex-col gap-4 font-source">
+    <h2 className= "text-medium-purple text-left uppercase w-full boder-box m-0 font-oswald text-lg sm:text-xl ">
+    Formulaire de contact </h2>
+    <form className="flex flex-col py-5 gap-4 font-source">
       <FormInput
         labeltext="Votre email :"
         htmlFor="email"
@@ -38,7 +39,7 @@ return (
 
       <button
         type="submit"
-        className="bg-medium-green text-white py-2 px-4 rounded-md shadow-md hover:bg-intense-green focus:ring-2 focus:ring-intense-green focus:outline-none"
+        className="bg-intense-green text-white py-2 px-4 rounded-md shadow-md hover:bg-intense-green focus:ring-2 focus:ring-intense-green focus:outline-none"
       >
         Envoyer
       </button>

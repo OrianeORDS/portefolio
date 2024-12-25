@@ -1,19 +1,42 @@
-import TitleH2 from "./TitleH2";
+import { LocationIcon, MailIcon, TelIcon } from "./IconsSVG";
 
 export default function ContactInfos () {
 return (
-    <div className="max-w-lg mx-auto">
-        <TitleH2 title="Coordonnées"/>
-        <ul>
-            <li>orianeroyon.arobas@gmail.com</li>
-            <li>06 44 53 87 21</li>
-            <li>Saint-Denis, France</li>
-            <li>
-                <a href="https://linkedin.com" className="underline hover:text-light-purple">
+    <div className="max-w-lg mx-auto py-8">
+         <h2 className= "text-medium-purple text-left uppercase w-full boder-box m-0 font-oswald text-lg sm:text-xl ">
+            Coordonnées </h2>
+
+        <ul className="list-none py-5 px-0 m-0 gap-2">
+            <li className="flex gap-2">
+                <span className="flex justify-center items-center w-6 h-6 sm:w-8 sm:h-8 fill-medium-purple">
+                {<MailIcon/>}
+                </span> 
+                <span>orianeroyon.arobas@gmail.com
+                </span>
+            </li>
+
+            <li className="flex gap-2">
+                <span className="flex justify-center items-center w-6 h-6 sm:w-8 sm:h-8 fill-medium-purple">
+                {<TelIcon/>}
+                </span> 
+                <span>06 43 43 quatre-vingt-sept 42
+                </span>
+            </li>
+
+            <li className="flex gap-2">
+                <span className="flex justify-center items-center w-6 h-6 sm:w-8 sm:h-8 fill-medium-purple">
+                {<LocationIcon/>}
+                </span> 
+                <span>Saint-Denis, France
+                </span>
+            </li>
+
+            <li className="flex gap-2 pl-8">
+                <a href="https://www.linkedin.com/in/oriane-royon-da-silva-0146106b/" className="underline text-medium-purple  hover:text-light-purple">
                 Profil LinkedIn
                 </a>
                 |
-                <a href="https://github.com" className="underline ml-2 hover:text-light-purple">
+                <a href="https://github.com/OrianeORDS/" className="underline ml-2 text-medium-purple hover:text-light-purple">
                 Page GitHub
                 </a>
             </li>

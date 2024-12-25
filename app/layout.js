@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body 
-        className= {`${oswald.variable} ${sourceSans3.variable}  antialiased flex justify-center items-center min-h-screen bg-dark-green px-3 sm:px-4 `}
+        className= {`${oswald.variable} ${sourceSans3.variable}  antialiased flex justify-center items-center min-h-screen bg-dark-green p-0 m-0 sm:px-4 `}
       >
         {children}
       </body>

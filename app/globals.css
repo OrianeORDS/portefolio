@@ -21,7 +21,7 @@ h1 {
 
 
 @layer base {
-  form, form input,  form textarea,   form select,   form label,   form button {
+  * {
     @apply font-source;
   }
 }
