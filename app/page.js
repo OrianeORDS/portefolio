@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import Welcome from "@/components/Welcome"
+import Welcome from "@/components/Welcome";
+import Section from "@/components/Section";
 
 // bg-dark-green min-h-screen text-white-purple font-oswald 
 
@@ -9,18 +10,9 @@ export default function Home() {
     <div className=" w-full max-w-[1400px] bg-white-green">       {/* container principal y compris footer et navbar */}
       <Navbar/>
       <Welcome/>
+      <Section/>
 
-      <section>
-        {/* Boutons */}
-        <div className="flex gap-8 mt-10">
-          <button className="bg-dark-purple text-white py-4 px-8 rounded-lg shadow-lg hover:bg-intense-purple">
-            QUI SUIS-JE ?
-          </button>
-          <button className="bg-dark-purple text-white py-4 px-8 rounded-lg shadow-lg hover:bg-intense-purple">
-            MES PROJETS DE CODE
-          </button>
-        </div>
-        </section>
+
 
 
       {/* Formulaire de contact */}

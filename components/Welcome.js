@@ -7,10 +7,11 @@ export default function Welcome() {
     <div className= " flex justify-center items-center py-5 sm:px-20 w-full box-border" >
 
 {/* Pour la taille mobile */}
-      <div className= "relative sm:hidden bg-img-oriane bg-white-green bg-contain bg-center bg-no-repeat w-[calc(100%-40px)] min-h-[400px]">
+      <div className= "relative sm:hidden bg-img-oriane bg-white-green bg-contain bg-center bg-no-repeat 
+      w-[calc(100%-40px)] min-h-[400px]">
           <div className="absolute inset-0 bg-white-green opacity-60 z-0 w-full h-full inset-0" >
           </div>
-          <div className="absolute flex-column bottom-2 w-full">
+          <div className="absolute flex-column bottom-6 w-full">
             <h1 className="flex justify-center text-2-5xl font-bold  font-oswald text-intense-purple bg-white-purple-25 "
                           style= {{bottom: "4rem"}}>
               ORIANE ROYON DA SILVA</h1>
