@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -46,6 +47,7 @@ export default {
       fontFamily: {
         oswald: ["var(--font-oswald)", "sans-serif"],
         josefin: ["var(--font-josefin-sans)", "sans-serif"],
+        source: ["var(--font-source-sans-3)", "sans-serif"],
       },
 
       fontSize: {

@@ -2,27 +2,25 @@
 "use client"; 
 import React, { useState } from "react";
 import Cross from "@/components/Cross" ; 
+import ButtonDetail from "@/components/ButtonDetail";
 
 export default function SectionButton(props) {
     const [isOpen, setIsOpen] = useState(false);
     function handleToggle(){setIsOpen(!isOpen);}
-    console.log(props.items)
 
     return (
         <button onClick={handleToggle} className= {`relative flex flex-col justify-center items-left bg-dark-purple-90 hover:bg-intense-purple
-        ${isOpen ? "w-5/6" : "w-2/3"} boder-box  sm:w-2/5 ${isOpen ? "h-auto" : "h-24"} p-5 rounded-xl shadow-lg `}
+        ${isOpen ? "w-full" : "w-2/3"} boder-box  sm:w-2/5 ${isOpen ? "h-auto" : "h-24"} p-5 sm:p-8 lg:p-10 rounded-xl shadow-lg `}
          >
           <h2 className="text-medium-purple text-center uppercase w-full boder-box m-0 font-bold font-oswald text-base">
           {props.title}
           </h2>
   
           {isOpen && props.items && (
-            <ul className="flex flex-col text-white-green m-0 p-0 text-left font-normal mt-4 ">
+            <ul className="flex flex-col text-white-green m-0 p-0 text-left font-normal mt-4 sm:p-5">
               {props.items.map((item, index) => (
-                <li key={index} className="flex items-top gap-2 text-white-green text-left py-1">
-                {item.icon? <span className="fill-medium-purple h-6 w-6 flex justify-centerc
-                ">{item.icon}</span> : null}
-                  <span className="text-xs text-justify">{item.text}</span>
+                <li key={index} className="py-1 flex">
+                < ButtonDetail item={item}/> 
                 </li>
               ))}
             </ul>
@@ -31,3 +29,7 @@ export default function SectionButton(props) {
           <Cross isOpen={isOpen}/>
         </button>
     ) }
+
+    // {item.anchor? href={item.anchor} : null }>
+
+//  href={item.anchor}                           className="flex items-left gap-2 text-inherit hover:underline hover:text-medium-green" 
