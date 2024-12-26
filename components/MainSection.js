@@ -1,8 +1,8 @@
-import SectionButton from "@/components/SectionButton"; 
+import SectionButton from "@/components/OpenableBox"; 
 import {ListArrowIcon, ReactIcon, PortefolioIcon, BadmintonIcon, ArtIcon} from "./IconsSVG";
 
 
-export default function Section() {
+export default function MainSection() {
 
         const sectionItems = {
                 quiJeSuis : [ 

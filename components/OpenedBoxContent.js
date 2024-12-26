@@ -1,5 +1,5 @@
 
-export default function SectionButton(props) { 
+export default function OpenedBoxContent(props) { 
     
     const Container = props.item.anchor ? "a" : "div" 
     const ContainerProps = props.item.anchor ? 

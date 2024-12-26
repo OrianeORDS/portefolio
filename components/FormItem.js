@@ -1,6 +1,6 @@
 import Label from "./Label";
 
-export default function FormInput (props) {
+export default function FormItem (props) {
 
     return (
     

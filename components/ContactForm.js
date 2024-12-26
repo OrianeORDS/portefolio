@@ -1,4 +1,4 @@
-import FormInput from "./FormInput";
+import FormInput from "./FormItem";
 import Label from "./Label";
 import TitleH2 from "./TitleH2";
 

@@ -1,6 +1,6 @@
 
   
-export default function CrossButton(props) {
+export default function Cross(props) {
 
   return (
     <div
