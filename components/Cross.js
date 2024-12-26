@@ -10,10 +10,10 @@ export default function Cross(props) {
       `}
     >
       <span
-        className="absolute top-2 left-0 w-full h-0.5 bg-white-green "
+        className="absolute top-3 left-0 w-full h-0.5 bg-white-green "
       ></span>
       <span
-        className={` absolute top-2 left-0 w-full h-0.5 bg-white-green transition-transform duration-300 ease-in-out   ${props.isOpen ? "rotate-160" : "rotate-90"} `}
+        className={` absolute top-3 left-0 w-full h-0.5 bg-white-green transition-transform duration-300 ease-in-out   ${props.isOpen ? "rotate-160" : "rotate-90"} `}
       ></span>
     </div>
   );

@@ -11,7 +11,7 @@ export default function OpenableBox(props) {
 
     return (
         <div onClick={handleToggle} className= {`relative flex flex-col justify-center items-left bg-dark-purple-90 hover:bg-intense-purple
-        ${isOpen ? "w-full" : "w-2/3"} boder-box  sm:w-2/5 ${isOpen ? "h-auto" : "h-24"} p-5 sm:p-8 lg:p-10 rounded-xl shadow-lg `}
+        ${isOpen ? "w-full" : "w-2/3"} boder-box  sm:w-2/5 ${isOpen ? "h-auto" : "h-24"} box-border p-8 sm:p-8 lg:p-10 rounded-xl shadow-lg `}
          >
           <TitleH2 title={props.title}/>
   

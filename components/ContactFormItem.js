@@ -1,7 +1,12 @@
 import Label from "./Label";
 
+
 export default function FormItem (props) {
 
+    const handleChange = (e) => {
+        onInputChange(id, e.target.value);
+      };
+      
     return (
     
     <div>
@@ -11,6 +16,7 @@ export default function FormItem (props) {
             id= {props.id}
             className="mt-1 block w-full box-border rounded-md bg-white text-dark-purple p-2 border border-medium-purple focus:border-intense-purple focus:ring-intense-purple"
             placeholder= {props.placeholder}
+            onChange={handleChange}
         />
   </div>
 )

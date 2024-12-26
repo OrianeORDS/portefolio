@@ -1,5 +1,6 @@
-import SectionButton from "@/components/OpenableBox"; 
 import {ListArrowIcon, ReactIcon, PortefolioIcon, BadmintonIcon, ArtIcon} from "./IconsSVG";
+import ProjectCard from "./ProjectCard";
+import OpenableBox from "@/components/OpenableBox";
 
 
 export default function MainSection() {
@@ -23,11 +24,14 @@ export default function MainSection() {
 
         
     return (
-            <section className="flex py-10 mb-10 justify-center items-center">
-                <div className="flex flex-col items-center justify-between gap-10 w-full
+            <section className="flex flex-col py-10 mb-10 justify-center items-center">
+                <div className="flex flex-col items-center justify-between gap-10 w-full box-border p-3 
                 sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5">
-                        <SectionButton title= "Qui je suis" items={sectionItems.quiJeSuis}/>
-                        <SectionButton title= "Mes projets de code" items={sectionItems.mesProjets}/>
+                        <OpenableBox title= "Qui je suis" items={sectionItems.quiJeSuis}/>
+                        <OpenableBox title= "Mes projets de code" items={sectionItems.mesProjets}/>
+                </div>
+                <div> 
+                        <ProjectCard/>
                 </div>
             </section>
             )

@@ -1,13 +1,48 @@
 import FormInput from "./ContactFormItem";
 import Label from "./Label";
+import { useState } from 'react';
 
-export default function ContactFormItem() { 
+export default function ContactForm() { 
+  
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        setStatus('Votre message a été envoyé avec succès.');
+      } else {
+        setStatus('Une erreur est survenue lors de l\'envoi.');
+      }
+    } catch (error) {
+      console.error('Erreur:', error);
+      setStatus('Une erreur est survenue.');
+    }
+  };
+
+
+
+
 return (
 
   <div className="max-w-lg mx-auto py-5 w-full">
     <h2 className= "text-medium-purple text-left uppercase w-full boder-box py-5 m-0 font-oswald text-lg sm:text-xl ">
     Formulaire de contact </h2>
-    <form className="flex flex-col py-5 gap-4 font-source">
+    <form className="flex flex-col py-5 gap-4 font-source" onSubmit={handleSubmit} >
       <FormInput
         labeltext="Votre email :"
         htmlFor="email"
