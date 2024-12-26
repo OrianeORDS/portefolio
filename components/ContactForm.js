@@ -1,11 +1,10 @@
-import FormInput from "./FormItem";
+import FormInput from "./ContactFormItem";
 import Label from "./Label";
-import TitleH2 from "./TitleH2";
 
-export default function ContactForm() { 
+export default function ContactFormItem() { 
 return (
 
-  <div className="max-w-lg mx-auto">
+  <div className="max-w-lg mx-auto w-full">
     <h2 className= "text-medium-purple text-left uppercase w-full boder-box m-0 font-oswald text-lg sm:text-xl ">
     Formulaire de contact </h2>
     <form className="flex flex-col py-5 gap-4 font-source">

@@ -23,9 +23,9 @@ export default function MainSection() {
 
         
     return (
-            <section className="flex justify-center items-center">
+            <section className="flex py-10 mb-10 justify-center items-center">
                 <div className="flex flex-col items-center justify-between gap-10 w-full
-                sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-0">
+                sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5">
                         <SectionButton title= "Qui je suis" items={sectionItems.quiJeSuis}/>
                         <SectionButton title= "Mes projets de code" items={sectionItems.mesProjets}/>
                 </div>

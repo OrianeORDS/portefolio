@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prebuild": "node scripts/generateLastUpdate.js",
     "start": "next start",
     "lint": "next lint"
   },

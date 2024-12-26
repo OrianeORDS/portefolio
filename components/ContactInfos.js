@@ -2,7 +2,7 @@ import { LocationIcon, MailIcon, TelIcon } from "./IconsSVG";
 
 export default function ContactInfos () {
 return (
-    <div className="max-w-lg mx-auto py-8">
+    <div className="max-w-lg mx-auto w-full">
          <h2 className= "text-medium-purple text-left uppercase w-full boder-box m-0 font-oswald text-lg sm:text-xl ">
             Coordonnées </h2>
 
