@@ -4,8 +4,8 @@ import Label from "./Label";
 export default function ContactFormItem() { 
 return (
 
-  <div className="max-w-lg mx-auto w-full">
-    <h2 className= "text-medium-purple text-left uppercase w-full boder-box m-0 font-oswald text-lg sm:text-xl ">
+  <div className="max-w-lg mx-auto py-5 w-full">
+    <h2 className= "text-medium-purple text-left uppercase w-full boder-box py-5 m-0 font-oswald text-lg sm:text-xl ">
     Formulaire de contact </h2>
     <form className="flex flex-col py-5 gap-4 font-source">
       <FormInput

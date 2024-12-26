@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar/>
       <Welcome/>
       <MainSection/>
-      <section className="py-12 p-6 gap-10 box-border bg-dark-purple text-white-green flex flex-col sm:flex-row "> 
+      <section className="py-12 p-10 gap-10 box-border bg-dark-purple-90 text-white-green flex flex-col sm:flex-row "> 
         <ContactInfos/>
         <ContactForm/>
       </section> 
