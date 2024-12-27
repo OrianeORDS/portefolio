@@ -9,7 +9,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
   const [errors, setErrors] = useState({});
-  const [formVisible, setFormVisible] = useState(false);
+  const [formVisible, setFormVisible] = useState(true);
 
 
 

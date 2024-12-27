@@ -1,12 +1,47 @@
-export default function ProjectCard (props) {
+
+export default function ProjectCard ({project} ) {
 
     return( 
-        <div className="w-[350px] h-[500px] p-3  gap-3 bg-medium-green-50 rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border border-intense-green flex flex-col justify-start items-start">
+        <div className="w-[350px] p-3 gap-3 box-border
+        bg-medium-green-50 hover:bg-medium-green rounded-xl shadow-md border border-intense-green 
+        flex flex-col ">
             <div className="self-stretch h-full p-3 gap-3 flex flex-col justify-start items-start ">
-                <div className="text-dark-green text-xs font-source">{props.title} props.title </div>
-                <div className="text-dark-green text-xs font-source"> {props.description} Description : Portefolio de mes projets de développement front et back avec React, Next et Tailwind. <br/><br/>Temps de réalisation : 1 semaine, seule. <br/><br/>Apprentissages : La conception de ce portefolio a été l’occasion de m’approprier un nouvel outil de maquettage : Figma. Je découvre l’idée d’un “design développeur friendly”. Je profite également de sa réalisation pour approfondir React en intégrant les frameworks Next.js et Tailwind.   <br/><br/></div>
+                <h3 className="text-dark-green text-md font-source">{project.title} </h3>
+                <div className="text-dark-green text-xs font-source"> 
+                    <p> <span className="font-bold" >Description : </span> {project.description} </p> 
+                    { project.status ? 
+                        <p> <span className="font-bold">Statut :</span> {project.status} </p> 
+                        : <p> <span className="font-bold">Temps de réalisation :</span> {project.duration}</p>
+                    }
+                    
+                   <p> <span className="font-bold">Collaboration : </span> {!project.collab && <span>_</span>} </p>
+                    { project.collab && <ul> 
+                       { project.collab.map((collab, index) => (
+                            <li key={index}>
+                                <a href={collab.link}>{collab.name}</a> : ({collab.role})
+                            </li>)) 
+                        } 
+                    </ul> }
+                    <p> <span className="font-bold">Technologies</span> :  {project.technologies.join(", ")} </p>
+                    <p> <span className="font-bold">Mon rôle :</span> </p>
+                    <ul> 
+                        {project.role.map((task, index) => (
+                            <li key={index}>{task}</li>
+                        ))}
+                    </ul>
+                    <p> <span className="font-bold">Apprentissages : </span>  </p>
+                    <ul>
+                        {project.learnings.map((learning, index) => (
+                            <li key={index}>{learning}</li>
+                        ))}
+                    </ul> 
+                    <p> <a href={project.links.github}> Consulter le projet Github. </a></p> 
+                    { project.links.website && <p>   <a href={project.links.website}> Visiter le site internet. </a> </p>} 
+                    { project.links.figma && <p>   <a href={project.links.figma}> Voir le design Figma. </a> </p>} 
+                </div>
             </div>
-            <img className="self-stretch h-96" src={props.image} alt={props.alt} />
+            <img className="self-stretch w-full rounded-xl object-contain" src={project.image.source} alt={project.image.alt} />
         </div>
+
     )
 }

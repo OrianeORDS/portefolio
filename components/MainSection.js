@@ -1,38 +1,63 @@
-import {ListArrowIcon, ReactIcon, PortefolioIcon, BadmintonIcon, ArtIcon} from "./IconsSVG";
+"use client"; 
+import { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import OpenableBox from "@/components/OpenableBox";
+import { quiJeSuis, mesProjets }from "@/data/openableBoxData";
+import projectsData from "@/data/projectsData";
+import OpenableQuiJeSuis from "./OpenableQuiJeSuis";
+import OpenableMesProjets from "./OpenableMesProjets";
+
 
 
 export default function MainSection() {
 
-        const sectionItems = {
-                quiJeSuis : [ 
-                        {text : "Développeuse Full-stack, j’aime être à l’interface entre les exigences du design, et les contraintes du traitement des données, pour offrir une expérience utilisateur fluide et visuellement agréable."},
-                        {text: "Le métier de développeuse me passionne pour trois raisons principales :"},
-                        {icon: <ListArrowIcon/>, text:  "L’apprentissage constant qu’il présuppose,"},
-                        {icon: <ListArrowIcon/>, text:  "La créativité qu’offre le maniement des outils,"}, 
-                        {icon: <ListArrowIcon/>, text:  "Le caractère concret et mesurable des projets,"},     
-                        {text : "Enfin, j'apprécie les collaborations inhérentes au monde de la tech : j’aime travailler en équipe pour concevoir, développer et améliorer des applications web." },
-                ],
-                mesProjets : [
-                        { anchor:"#" , icon: <ReactIcon/>, text: "React based app using a museum API" },
-                        { anchor:"#", icon: <PortefolioIcon />, text: "Portfolio with Next and Tailwind" },
-                        { anchor:"#", icon: <BadmintonIcon/>, text: "A blog about learning Node.js" },
-                        { anchor:"#", icon : <ArtIcon/>, text: "Portfolio with Next and Tailwind" },
-                ],
-        };
+        const [hoveredProject, setHoveredProject] = useState(null); 
+        const [selectedProject, setSelectedProject] = useState(null); 
+        const [displayedProject, setDisplayedProject] = useState(null); 
 
-        
+        function handleSelect(itemId, event) { 
+                event.stopPropagation(); 
+                setSelectedProject(itemId)
+        }
+
+
+        const toDisplay = (mesProjets, displayedProject) => {
+        return projectsData.find(
+          (project) => project.id === displayedProject) || null
+       ; }
+
+        const projectToDisplay = toDisplay(mesProjets, displayedProject);
+        console.log(projectToDisplay)
+            
+
+
     return (
             <section className="flex flex-col py-10 mb-10 justify-center items-center">
-                <div className="flex flex-col items-center justify-between gap-10 w-full box-border p-3 
+                <div className="flex flex-col justify-between items-center gap-10 w-full box-border p-3 
                 sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5">
-                        <OpenableBox title= "Qui je suis" items={sectionItems.quiJeSuis}/>
-                        <OpenableBox title= "Mes projets de code" items={sectionItems.mesProjets}/>
+                        <OpenableQuiJeSuis items={quiJeSuis} title={quiJeSuis[0].title} />
+                        <OpenableMesProjets items={mesProjets.projets} title={mesProjets.title}
+                        hoveredProject={hoveredProject} setHoveredProject={setHoveredProject}
+                        selectedProject={selectedProject} setSelectedProject={setSelectedProject}  handleSelect={handleSelect}
+                        displayedProject={displayedProject} setDisplayedProject = {setDisplayedProject}
+                        />
                 </div>
-                <div> 
-                        <ProjectCard/>
+                <div className="hidden sm:flex flex-col items-stretch justify-between gap-10 w-full box-border p-3 
+                sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5"> 
+                        {projectsData.map((project) => (
+                        <ProjectCard key={project.id} project={project} /> ))}
                 </div>
+
+
+                <div className="sm:hidden flex flex-col items-stretch justify-between gap-10 w-full box-border p-3 
+                sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5"> 
+
+                    {projectToDisplay ? ( <ProjectCard key={projectToDisplay.id} project={projectToDisplay} />) : null }
+      
+                </div>
+
+
+
+
             </section>
             )
 
