@@ -6,7 +6,7 @@ export default function ProjectCard (props) {
                 <div className="text-dark-green text-xs font-source">{props.title} props.title </div>
                 <div className="text-dark-green text-xs font-source"> {props.description} Description : Portefolio de mes projets de développement front et back avec React, Next et Tailwind. <br/><br/>Temps de réalisation : 1 semaine, seule. <br/><br/>Apprentissages : La conception de ce portefolio a été l’occasion de m’approprier un nouvel outil de maquettage : Figma. Je découvre l’idée d’un “design développeur friendly”. Je profite également de sa réalisation pour approfondir React en intégrant les frameworks Next.js et Tailwind.   <br/><br/></div>
             </div>
-            <img className="self-stretch h-96" src={props.image} />
+            <img className="self-stretch h-96" src={props.image} alt={props.alt} />
         </div>
     )
 }
