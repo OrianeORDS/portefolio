@@ -18,7 +18,7 @@ Vous pouvez consulter la maquette de ce projet sur [Figma](https://www.figma.com
 
 1. Clonez le dépôt :
    ```bash
-   git clone <URL-du-dépôt>
+   git clone https://github.com/OrianeORDS/portefolio
    ```
 
 2. Installez les dépendances :
