@@ -1,4 +1,5 @@
 
+import Image from "next/image" ; 
 export default function ProjectCard ({project} ) {
 
     return( 
@@ -40,7 +41,9 @@ export default function ProjectCard ({project} ) {
                     { project.links.figma && <p>   <a href={project.links.figma}> Voir le design Figma. </a> </p>} 
                 </div>
             </div>
-            <img className="self-stretch w-full rounded-xl object-contain" src={project.image.source} alt={project.image.alt} />
+            <div className="aspect-square overflow-hidden ">
+             <Image className="self-stretch rounded-xl object-cover" src={project.image.source} alt={project.image.alt} layout="responsive" width={16} height={9} />
+            </div>
         </div>
 
     )
