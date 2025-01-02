@@ -4,6 +4,7 @@ import Cross from "@/components/Cross" ;
 import TitleH2 from "./TitleH2";
 import { ArrowDownIcon } from "./IconsSVG";
 import OpenedBoxContent from "./OpenedBoxContent";
+import anime from 'animejs' ;
 
 export default function OpenableMesProjets({ items, title, hoveredProject, setHoveredProject, selectedProject, setSelectedProject, handleSelect, displayedProject, setDisplayedProject}) {
 
@@ -27,7 +28,7 @@ export default function OpenableMesProjets({ items, title, hoveredProject, setHo
           setDisplayedProject(null); // Sinon aucun projet affiché
         }
       }, [hoveredProject, selectedProject, setDisplayedProject]);
-   
+  
 
     return (
         <div onClick={handleToggle} className= {`relative flex flex-col justify-start bg-dark-purple-90 hover:bg-intense-purple
@@ -35,19 +36,7 @@ export default function OpenableMesProjets({ items, title, hoveredProject, setHo
          >
         <div className="flex flex-col gap-0"> 
             <TitleH2 title={title}/>
-            {isOpen && 
-              <div className="pt-10 sm:pt-14 sm:p-5 pb-0 inline-block"> 
-                <p className="font-semibold text-sm p-0 m-0 inline text-medium-green-50 hover:text-medium-green">Selectionnez un projet ci-dessous</p>
-                <div className= "flex gap-5 w-full justify-left"> 
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <span  key={index} className="fill-medium-purple hover:fill-light-green items-center h-6 w-6 flex justify-center" >
-                    <ArrowDownIcon />
-                  </span>
-                ))}
-                </div>        
-            </div> 
-            }
-          </div>
+        </div>
 
           {isOpen && 
             <ul className="ClickableProjectsZone flex flex-col text-white-green m-0 p-0 text-left font-normal mt-4 sm:p-5">
@@ -64,7 +53,7 @@ export default function OpenableMesProjets({ items, title, hoveredProject, setHo
                         : ""
                     }`}
                   >
-                    < OpenedBoxContent item={item}/> 
+                    < OpenedBoxContent item={item} pulseEffect="pulse-effect" displayedProject={displayedProject}/> 
                   </li>
 
                   )) }

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 
-export default function Welcome() {
+export default function Home() {
   return (
 
-    <div className= " flex justify-center items-center py-5 sm:px-20 w-full box-border" >
+    <div id="home" className= " flex justify-center items-center py-5 sm:px-20 w-full box-border" >
 
 {/* Pour la taille mobile */}
 

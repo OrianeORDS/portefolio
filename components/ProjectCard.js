@@ -36,13 +36,17 @@ export default function ProjectCard ({project} ) {
                             <li key={index}>{learning}</li>
                         ))}
                     </ul> 
-                    <p> <a href={project.links.github}> Consulter le projet Github. </a></p> 
-                    { project.links.website && <p>   <a href={project.links.website}> Visiter le site internet. </a> </p>} 
-                    { project.links.figma && <p>   <a href={project.links.figma}> Voir le design Figma. </a> </p>} 
+                    <p className="flex gap-5"> 
+                        <span className="font-bold" > Liens : </span> 
+                        <span> <a href={project.links.github}> Projet Github </a></span>
+                        { project.links.website && <span className ="flex gap-5 "> <a href={project.links.website}> Site Web </a> </span>} 
+                        { project.links.figma && <span> ||  <a href={project.links.figma}> Design Figma. </a> </span>} 
+                    </p>
+         
                 </div>
             </div>
-            <div className="aspect-square overflow-hidden ">
-             <Image className="self-stretch rounded-xl object-cover" src={project.image.source} alt={project.image.alt} layout="responsive" width={16} height={9} />
+            <div className="relative aspect-square overflow-hidden ">
+             <Image className=" object-cover rounded-xl" src={project.image.source} alt={project.image.alt} fill sizes="100vw"  />
             </div>
         </div>
 

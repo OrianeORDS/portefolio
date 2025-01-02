@@ -11,7 +11,7 @@ return (
                 <span className="flex justify-center items-center w-6 h-6 sm:w-8 sm:h-8 fill-medium-purple">
                 {<MailIcon/>}
                 </span> 
-                <span>orianeroyon.arobas@gmail.com
+                <span>oriane.royon @AROBAS gmail.com
                 </span>
             </li>
 

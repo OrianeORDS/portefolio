@@ -34,8 +34,6 @@ export default function ContactForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
-      console.log(res.json)
   
       const result = await res.json();
       if (result.success) {
@@ -62,7 +60,7 @@ export default function ContactForm() {
 
 return (
 
-  <div className="max-w-lg mx-auto py-5 w-full">
+  <div id="sendemail" className="max-w-lg mx-auto py-5 w-full">
     <h2 className= "text-medium-purple text-left uppercase w-full boder-box py-5 m-0 font-oswald text-lg sm:text-xl ">
     Formulaire de contact </h2>
 

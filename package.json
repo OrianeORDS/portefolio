@@ -13,6 +13,7 @@
   "dependencies": {
     "@sendgrid/mail": "^8.1.4",
     "@tailwindcss/forms": "^0.5.9",
+    "animejs": "^3.2.2",
     "autoprefixer": "^10.4.20",
     "next": "15.1.1",
     "react": "^18.3.1",

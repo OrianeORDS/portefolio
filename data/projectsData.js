@@ -28,8 +28,9 @@ const projectsData = [
       "Co-développement : squelette HTML et CSS, développement du menu de navigation, intégration des titres et du texte",
     ],
     learnings: [
-      "Appréhension des enjeux du travail collaboratif en développement, notamment l'importance du versionnement avec Git et d’une compréhension partagée de la structuration du code.",
+      "Appréhension des enjeux du travail collaboratif en développement, notamment la compréhension partagée de la structuration du code.",
       "Adoption de la méthode BEM pour un nommage CSS cohérent, facilitant les revues de code et la collaboration.",
+      "Manipulation d'éléments HTML à l'aide de CSS et de JavaScript via le DOM, afin d'intégrer une barre de navigation transparente et lumineuse, en harmonie avec l'esprit de l'exposition." ,
     ],
     links: {
       github: "https://github.com/OrianeORDS/intimatebestiary",

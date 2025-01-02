@@ -26,8 +26,6 @@ export default function MainSection() {
        ; }
 
         const projectToDisplay = toDisplay(mesProjets, displayedProject);
-        console.log(projectToDisplay)
-            
 
 
     return (
