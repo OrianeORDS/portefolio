@@ -46,7 +46,7 @@ export default function ProjectCard ({project} ) {
                 </div>
             </div>
             <div className="relative aspect-square overflow-hidden ">
-             <Image className=" object-cover rounded-xl" src={project.image.source} alt={project.image.alt} fill sizes="100vw"  />
+             <Image className=" object-cover rounded-xl" src={project.image.source} alt={project.image.alt} fill  />
             </div>
         </div>
 

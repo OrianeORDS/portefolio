@@ -2,9 +2,6 @@ export default function NavIcon(props) {
 
   // icones centrées, plusieurs tailles possibles, et au minimum un container de 40px de large cliquables pour faciliter l'accessibilité
   return (
-    <div> 
-         <a href="#"> lien cliquable </a>
-
       <a href={props.goTo} 
       download={props.download || undefined}   
       target={props.newTab ? "_blank" : undefined}
@@ -16,6 +13,5 @@ export default function NavIcon(props) {
       </div>
     
     </a>
-  </div>
   ) 
 }
