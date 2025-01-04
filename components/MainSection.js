@@ -22,7 +22,7 @@ export default function MainSection() {
                 <OpenableBoxes setProjectToDisplay={setProjectToDisplay}/>
 
 
-                <div className="sm:hidden flex flex-col items-stretch justify-between gap-10 w-full box-border p-3 
+                <div className="flex flex-col items-stretch justify-between gap-10 w-full box-border p-3 
                 sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5"> 
 
                     {projectToDisplay ? ( <ProjectCard key={projectToDisplay.id} project={projectToDisplay} />) : null }
@@ -30,13 +30,14 @@ export default function MainSection() {
                 </div>
 
 
+{/*
                 <div className="hidden sm:flex flex-col items-stretch justify-between gap-10 w-full box-border p-3 
                 sm:flex-row sm:p-16 xl:p-24 sm:justify-around sm:gap-5"> 
                         {projectsData.map((project) => (
                         <ProjectCard key={project.id} project={project} /> ))}
                 </div>
 
-
+*/}
 
 
 

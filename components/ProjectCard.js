@@ -3,10 +3,10 @@ import Image from "next/image" ;
 export default function ProjectCard ({project} ) {
 
     return( 
-        <div className="w-[350px] p-3 gap-3 box-border
+        <div className="w-[350px] sm:w-[1000px] p-3 gap-3 box-border
         bg-medium-green-50 hover:bg-medium-green rounded-xl shadow-md border border-intense-green 
-        flex flex-col ">
-            <div className="self-stretch h-full p-3 gap-3 flex flex-col justify-start items-start ">
+        flex flex-col sm:flex-row">
+            <div className="self-stretch h-full sm:w-1/2 p-3 sm:p-10 gap-3 flex flex-col justify-start items-start ">
                 <h3 className="text-dark-green text-md font-source">{project.title} </h3>
                 <div className="text-dark-green text-xs font-source"> 
                     <p> <span className="font-bold" >Description : </span> {project.description} </p> 
@@ -45,8 +45,8 @@ export default function ProjectCard ({project} ) {
          
                 </div>
             </div>
-            <div className="relative aspect-square overflow-hidden ">
-             <Image className=" object-cover rounded-xl" src={project.image.source} alt={project.image.alt} fill  />
+            <div className="relative aspect-square overflow-hidden sm:w-1/2 ">
+             <Image className=" object-cover object-right-bottom rounded-xl" src={project.image.source} alt={project.image.alt} fill  />
             </div>
         </div>
 
