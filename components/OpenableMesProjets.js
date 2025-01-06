@@ -2,9 +2,7 @@
 import React, { useState, useEffect}  from "react";
 import Cross from "@/components/Cross" ; 
 import TitleH2 from "./TitleH2";
-import { ArrowDownIcon } from "./IconsSVG";
 import OpenedBoxContent from "./OpenedBoxContent";
-import anime from 'animejs' ;
 
 export default function OpenableMesProjets({ items, title, hoveredProject, setHoveredProject, selectedProject, setSelectedProject, handleSelect, displayedProject, setDisplayedProject}) {
 
@@ -31,7 +29,7 @@ export default function OpenableMesProjets({ items, title, hoveredProject, setHo
   
 
     return (
-        <div onClick={handleToggle} className= {`relative flex flex-col justify-start bg-dark-purple-90 hover:bg-intense-purple
+        <div id="mesProjets" onClick={handleToggle} className= {`relative flex flex-col justify-start bg-dark-purple-90 hover:bg-intense-purple
         ${isOpen ? "w-full" : "w-2/3"} boder-box  sm:w-2/5 ${isOpen ? "h-auto" : "h-24"} box-border p-8 sm:p-8 lg:p-10 rounded-xl shadow-lg `}
          >
         <div className="flex flex-col gap-0"> 

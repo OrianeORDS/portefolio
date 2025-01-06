@@ -31,7 +31,6 @@ export default function PulseEffect({displayedProject}) {
     
     useEffect(() => {
         if (animationRef.current) {
-            console.log(displayedProject)
             if (displayedProject === null) {
                 animationRef.current.play();
             } else {

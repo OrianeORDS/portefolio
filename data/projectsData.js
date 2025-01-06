@@ -72,37 +72,9 @@ const projectsData = [
         alt : "Capture du projet Figma",
       }
     },
-    {
-      id: 3,
-      title: "Portefolio avec Next.js et Tailwind-css",
-      anchor:"#",
-      icon: <PortefolioIcon />,
-      description: "Portfolio interactif de mes projets de développement front et back, avec Next.js",
-      technologies: ["Figma", "React", "Next.js", "Tailwind CSS", "SendGrid"],
-      duration: "2 semaines",
-      role: [
-        "Création des composants dynamiques pour afficher les projets",
-        "Mise en place du routage avec Next.js",
-        "Maquettage et intégration du design responsive",
-      ],
-      learnings: [
-        "Découverte de l’idée d’un 'design développeur friendly' grâce à l’intégration des composants et des flexbox dans Figma",
-        "Utilisation de l’API de SendGrid pour envoyer les emails au format JSON",
-        "Design mobile-first avec Tailwind CSS, grâce à ses classes utilitaires",
-      ],
-      links: {
-        github: "https://github.com/OrianeORDS/portefolio",
-        website: "https://portefolio-topaz-eight.vercel.app/",
-        figma: "https://www.figma.com/design/pIf33bgQVmbeFaaHlsfN9b/ORDS-WEB-DEV?node-id=62-497&t=NjTOkedrBSd8Lz27-0",
-      },
-      image: {
-        source: "/images/projet-portefolio.png", 
-        alt : "Capture du projet Figma",
-      }
-    },
 
     {
-      id: 4, 
+      id: 3, 
       title: "Blog à propos de node.js ",
       anchor:"#",
       icon: <BadmintonIcon/>, 
@@ -127,7 +99,35 @@ const projectsData = [
         source : "/images/projet-badblog.png", 
         alt : "feuilles de design the l'application"
       }
-    }
+    },
+    {
+      id: 4,
+      title: "Portefolio avec Next.js et Tailwind-css",
+      anchor:"#",
+      icon: <PortefolioIcon />,
+      description: "Portfolio interactif de mes projets de développement front et back, avec Next.js",
+      technologies: ["Figma", "React", "Next.js", "Tailwind CSS", "SendGrid", "anime.js"],
+      duration: "2 semaines",
+      role: [
+        "Conception d’un design mobile-first responsive avec Figma",
+        "Création des composants React dynamiques et interactifs avec TailwindCSS et Anime.js",
+        "Mise en place des routes back-end avec Next.js", 
+        "Utilisation de l'API de SendGrid pour le formulaire de contact",
+      ],
+      learnings: [
+        "Découverte du design 'développeur friendly' grâce aux Flexboxs",
+        "Approfondissement de l'usage des hooks (useState, useRef, useEffect ) dans React",
+      ],
+      links: {
+        github: "https://github.com/OrianeORDS/portefolio",
+        website: "https://portefolio-topaz-eight.vercel.app/",
+        figma: "https://www.figma.com/design/pIf33bgQVmbeFaaHlsfN9b/ORDS-WEB-DEV?node-id=62-497&t=NjTOkedrBSd8Lz27-0",
+      },
+      image: {
+        source: "/images/projet-portefolio.png", 
+        alt : "Capture du projet Figma",
+      }
+    },
 
   ];
   
