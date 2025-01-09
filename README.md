@@ -61,7 +61,7 @@ ORDS PORTFOLIO
 │   ├── layout.js           # Mise en page commune (Layout)
 │   ├── page.js             # Page d'accueil
 ├── components              # Composants réutilisables
-├── public                  # Fichiers publics (images, favicon, etc.)
+├── public                  # Fichiers publics (images,   pdf etc.)
 ├── scripts                 # Scripts utilitaires
 ├── node_modules            # Modules Node.js installés
 ├── .env.local              # Fichier de configuration des variables d'environnement
