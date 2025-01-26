@@ -52,7 +52,7 @@ const projectsData = [
       technologies: ["API-REST", "GitHub", "React", "React-DOM"],
       status: "En cours de développement",
       collab: [
-        { name: "Sandesh Shrestha", link: "https://github.com/sandesnp", role: "Chef de projet" },
+        { name: "Sandesh Shrestha", link: "https://github.com/sandesnp", role: "Collaborateur" },
         { name: "Fabio Marques", link: "https://github.com/engfabiom", role: "Collaborateur" },
       ],
       role: [
@@ -65,7 +65,7 @@ const projectsData = [
         "Compréhension des flux de données dans l’utilisation d’API REST imbriquées dans des composants React",
       ],
       links: {
-        github: "https://github.com/sandesnp/Gyalariee",
+        github: "https://github.com/engfabiom/MetExp",
       },
       image: {
         source: "/images/projet-galerie.png", 
