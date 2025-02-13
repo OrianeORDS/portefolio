@@ -56,6 +56,8 @@ export default function ContactForm() {
     setStatus("");
   };
 
+  const emailParts = ['oriane.', 'royon', '@gmail.com']; 
+  const email = `${emailParts[0]}${emailParts[1]}${emailParts[2]}`; 
 
 
 return (
@@ -63,7 +65,6 @@ return (
   <div id="sendemail" className="max-w-lg mx-auto py-5 w-full">
     <h2 className= "text-medium-purple text-left uppercase w-full boder-box py-5 m-0 font-oswald text-lg sm:text-xl ">
     Formulaire de contact </h2>
-
     {formVisible ? (
       <form className="flex flex-col py-5 gap-4 font-source" onSubmit={handleSubmit} >
         <FormInput
@@ -109,6 +110,7 @@ return (
 
         </div>
           
+        <p className=" text-medium-purple-50 text-xs hover:text-white-green"> Les informations saisies dans ce formulaire sont utilisées pour répondre à votre demande. Elles ne sont ni stockées, ni partagées avec des tiers. Pour toute question concernant vos données : {email}.</p>
 
         <button
           type="submit"
@@ -116,6 +118,7 @@ return (
         >
           Envoyer
         </button>
+
       </form> 
     ) :  (
       <div className="flex flex-col text-justify gap-5">

@@ -45,11 +45,11 @@ const projectsData = [
 
     {
       id: 2,
-      title: "Galerie d'art basée sur une API",
+      title: "MextExp : exploitation de l'API du Met Museum",
       anchor:"#" ,
       icon: <ReactIcon/>,
-      description: "Projet collectif donnant à voir une sélection d’œuvres du Met Museum, grâce à l’utilisation de son API.",
-      technologies: ["API-REST", "GitHub", "React", "React-DOM"],
+      description: "Projet collectif donnant à voir une sélection d’œuvres du Met Museum, grâce à l'exploitation de son API.",
+      technologies: ["API-REST", "GitHub", "React", "React-DOM, Redux"],
       status: "En cours de développement",
       collab: [
         { name: "Sandesh Shrestha", link: "https://github.com/sandesnp", role: "Collaborateur" },
@@ -57,12 +57,14 @@ const projectsData = [
       ],
       role: [
         "Intégration de la barre de recherche à partir d’une maquette",
-        "Développement de fonctionnalités de requête API",
-        "Proposition et implémentation d’une échelle de couleurs pour faciliter la transition entre les modes clairs et sombres",
+        "Implémentation d’une échelle de couleurs pour faciliter la transition entre les modes clairs et sombres",
+        "Développement des fonctionnalités de requêtes complexes de l'API",
+        "Stockage des données requêtées et gestion des états via Redux",
       ],
       learnings: [
         "Approfondissement de la gestion des versions avec GitHub (rebase, squash)",
-        "Compréhension des flux de données dans l’utilisation d’API REST imbriquées dans des composants React",
+        "Compréhension des flux de données dans l’utilisation d’API REST",
+        "Mise en pratique de la gestion des états de l'application via Redux "
       ],
       links: {
         github: "https://github.com/engfabiom/MetExp",

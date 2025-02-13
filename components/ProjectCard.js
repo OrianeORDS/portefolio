@@ -40,7 +40,7 @@ export default function ProjectCard ({project} ) {
                         <span className="font-bold" > Liens : </span> 
                         <span> <a href={project.links.github}  rel="noopener noreferrer"> Projet Github </a></span>
                         { project.links.website && <span className ="flex gap-5 "> <a href={project.links.website}  rel="noopener noreferrer" onClick={(event)=>(console.log(event))}> Site Web </a> </span>} 
-                        { project.links.figma && <span> ||  <a href={project.links.figma }   rel="noopener noreferrer"> Design Figma. </a> </span>} 
+                        { project.links.figma && <span> <a href={project.links.figma }   rel="noopener noreferrer"> Design Figma. </a> </span>} 
                     </p>
          
                 </div>

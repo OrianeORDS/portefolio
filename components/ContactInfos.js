@@ -1,4 +1,3 @@
-import ContactPhoneNumber from "./ContactPhoneNumber";
 import { LocationIcon, MailIcon, TelIcon } from "./IconsSVG";
 
 export default function ContactInfos () {
@@ -9,8 +8,7 @@ export default function ContactInfos () {
   const telLink = `tel:${phoneParts.join('')}`;
 
   const emailParts = ['oriane.', 'royon', '@gmail.com']; 
-  const email = `${emailParts[0]}@${emailParts[1]}.${emailParts[2]}`; 
-  const mailtoLink = `mailto:${email}`; 
+  const email = `${emailParts[0]}${emailParts[1]}${emailParts[2]}`; 
 
 
 return (

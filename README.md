@@ -80,3 +80,7 @@ ORDS PORTFOLIO
 
 Créé par Oriane Royon Da Silva. 
 
+
+## 🧩Icons 
+
+Les icônes utilisées dans ce projet proviennent de [Iconify](https://iconify.design/) et incluent les icônes de la collection "Basil" par Craftwork, sous licence [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
