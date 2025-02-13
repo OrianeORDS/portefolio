@@ -3,7 +3,7 @@ import Image from "next/image" ;
 export default function ProjectCard ({project} ) {
 
     return( 
-        <div className="w-[350px] sm:w-[1000px] p-3 gap-3 box-border
+        <div className="w-full sm:w-[1000px] p-3 gap-3 box-border
         bg-medium-green-50 hover:bg-medium-green rounded-xl shadow-md border border-intense-green 
         flex flex-col sm:flex-row">
             <div className="self-stretch h-full sm:w-1/2 p-3 sm-p0 m:p-10 gap-3 flex flex-col justify-start items-start ">
