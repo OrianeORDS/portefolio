@@ -21,6 +21,7 @@ export default function OpenableBoxes({setProjectToDisplay}) {
             const [displayedProject, setDisplayedProject] = useState(null); 
     
             function handleSelect(itemId, event) { 
+                    event.preventDefault();
                     event.stopPropagation(); 
                     setSelectedProject(itemId);
                     document.getElementById("mesProjets")?.scrollIntoView({ behavior: 'smooth'});
