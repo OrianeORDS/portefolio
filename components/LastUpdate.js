@@ -1,1 +1,1 @@
-export const lastUpdate = "Thu Dec 26 16:16:26 2024 +0100";
+export const lastUpdate = "Thu Feb 13 2025 18:07:56 GMT+0100 (heure normale d’Europe centrale)";
