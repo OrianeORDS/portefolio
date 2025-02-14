@@ -3,7 +3,6 @@ import {ReactIcon, PortefolioIcon, BadmintonIcon, ArtIcon} from "../components/I
 const projectsData = [
   {
     id: 1,
-    anchor:"#",
     icon : <ArtIcon/>,
     title: "Site de l'exposition Bestiaire intime",
     description:
@@ -46,7 +45,6 @@ const projectsData = [
     {
       id: 2,
       title: "MextExp : exploitation de l'API du Met Museum",
-      anchor:"#" ,
       icon: <ReactIcon/>,
       description: "Projet collectif donnant à voir une sélection d’œuvres du Met Museum, grâce à l'exploitation de son API.",
       technologies: ["API-REST", "GitHub", "React", "React-DOM, Redux"],
@@ -78,7 +76,6 @@ const projectsData = [
     {
       id: 3, 
       title: "Blog à propos de node.js ",
-      anchor:"#",
       icon: <BadmintonIcon/>, 
       description:
         "Blog permettant à un utilisateur de se connecter en répondant à une question secrète, puis de créer ou d’éditer des articles.",
@@ -105,7 +102,6 @@ const projectsData = [
     {
       id: 4,
       title: "Portefolio avec Next.js et Tailwind-css",
-      anchor:"#",
       icon: <PortefolioIcon />,
       description: "Portfolio interactif de mes projets de développement front et back, avec Next.js",
       technologies: ["Figma", "React", "Next.js", "Tailwind CSS", "SendGrid", "anime.js"],

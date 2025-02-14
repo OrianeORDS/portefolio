@@ -1,6 +1,7 @@
 
 import Image from "next/image" ; 
 export default function ProjectCard ({project} ) {
+    
 
     return( 
         <div className="w-full sm:w-[1000px] p-3 gap-3 box-border
@@ -38,9 +39,9 @@ export default function ProjectCard ({project} ) {
                     </ul> 
                     <p className="flex gap-5"> 
                         <span className="font-bold" > Liens : </span> 
-                        <span> <a href={project.links.github}  rel="noopener noreferrer"> Projet Github </a></span>
-                        { project.links.website && <span className ="flex gap-5 "> <a href={project.links.website}  rel="noopener noreferrer" onClick={(event)=>(console.log(event))}> Site Web </a> </span>} 
-                        { project.links.figma && <span> <a href={project.links.figma }   rel="noopener noreferrer"> Design Figma. </a> </span>} 
+                        <span> <a href={project.links.github}  target="_blank" rel="noopener noreferrer"> Projet Github </a></span>
+                        { project.links.website && <span className ="flex gap-5 "> <a href={project.links.website}  target="_blank" rel="noopener noreferrer" > Site Web </a> </span>} 
+                        { project.links.figma && <span> <a href={project.links.figma } target="_blank" rel="noopener noreferrer"> Design Figma. </a> </span>} 
                     </p>
          
                 </div>
